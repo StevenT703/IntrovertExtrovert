@@ -27,7 +27,7 @@ Python provides the benefit of allowing the model to be used again in the event 
 ## ETL
 The analyst has used the following process when preparing their data for the model.
 
-<img width="579" height="182" alt="image" src="https://github.com/user-attachments/assets/ec493665-4921-44f1-b6ff-94e122437bb3" />
+<img width="579" height="182" alt="image" src="https://www.github.com/user-attachments/assets/ec493665-4921-44f1-b6ff-94e122437bb3" />
 
 
 ## Exploratory data analysis
@@ -37,13 +37,13 @@ The original dataset was opened in Microsoft Excel to understand and visualise t
 
 
 
-<img width="940" height="246" alt="image" src="https://github.com/user-attachments/assets/c4d981f5-7060-4735-bba6-24d58fae3410" />  
+<img width="940" height="246" alt="image" src="https://www.github.com/user-attachments/assets/c4d981f5-7060-4735-bba6-24d58fae3410" />  
 
 
 Filters were applied to the dataset and blank values were identified in all seven columns.    
 
 
-<img width="407" height="406" alt="image" src="https://github.com/user-attachments/assets/8bb3bd34-1572-4641-b728-d77c004b2ef8" />    
+<img width="407" height="406" alt="image" src="https://www.github.com/user-attachments/assets/8bb3bd34-1572-4641-b728-d77c004b2ef8" />    
 
 
 Each numerical column has a minimum and maximum value. The data was checked to ensure that values were within the constraints.      
