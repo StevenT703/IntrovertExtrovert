@@ -26,7 +26,7 @@ Python provides the benefit of allowing the model to be used again in the event 
 # Method
 ## ETL
 The analyst has used the following process when preparing their data for the model.
-
+!(/Screenshots/Screenshot1.png)
 <img width="579" height="182" alt="image" src="https://github.com/user-attachments/assets/ec493665-4921-44f1-b6ff-94e122437bb3" />
 
 
