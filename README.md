@@ -26,8 +26,8 @@ Python provides the benefit of allowing the model to be used again in the event 
 # Method
 ## ETL
 The analyst has used the following process when preparing their data for the model.
-!(/Screenshots/Screenshot1.png)
-<img width="579" height="182" alt="image" src="https://github.com/user-attachments/assets/ec493665-4921-44f1-b6ff-94e122437bb3" />
+![Screenshot1](/Screenshots/Screenshot1.png)
+
 
 
 ## Exploratory data analysis
@@ -36,64 +36,64 @@ The dataset was assessed according to the data quality dimensions in Gov.uk (202
 The original dataset was opened in Microsoft Excel to understand and visualise the data.
 
 
+![Screenshot2](/Screenshots/Screenshot2.png)
 
-<img width="940" height="246" alt="image" src="https://github.com/user-attachments/assets/c4d981f5-7060-4735-bba6-24d58fae3410" />  
 
 
 Filters were applied to the dataset and blank values were identified in all seven columns.    
 
-
-<img width="407" height="406" alt="image" src="https://github.com/user-attachments/assets/8bb3bd34-1572-4641-b728-d77c004b2ef8" />    
+![Screenshot3](/Screenshots/Screenshot3.png)
+ 
 
 
 Each numerical column has a minimum and maximum value. The data was checked to ensure that values were within the constraints.      
 
-
-<img width="296" height="458" alt="image" src="https://github.com/user-attachments/assets/4dd7d8c3-228c-442b-967c-0470ed900616" />    
+![Screenshot4](/Screenshots/Screenshot4.png)
+  
 
 
 In Python, the number of nulls was investigated.   
 
-
-<img width="509" height="314" alt="image" src="https://github.com/user-attachments/assets/e7b52260-0a6b-4f13-9377-059bc7e4694b" />    
+![Screenshot5](/Screenshots/Screenshot5.png)
+ 
 
 
 There are null values in each column. The choice was taken to remove any rows with null values, resulting in 423 rows being removed. 
 
-
-<img width="432" height="438" alt="image" src="https://github.com/user-attachments/assets/1ca25f43-6798-4627-b5d7-9fdc172ec3d9" />    
+![Screenshot6](/Screenshots/Screenshot6.png)
+  
 
 
 ## Encoding
 String values are encoded into binary values and original columns are dropped. 
 
-
-<img width="940" height="448" alt="image" src="https://github.com/user-attachments/assets/46ee6838-0963-4bc6-824b-fb839d96b635" />  
-
-
-<img width="940" height="439" alt="image" src="https://github.com/user-attachments/assets/29fc32a6-5093-498a-b8ce-b28dbe344d92" />  
+![Screenshot7](/Screenshots/Screenshot7.png)
 
 
-<img width="940" height="445" alt="image" src="https://github.com/user-attachments/assets/c49b93ae-778d-46ba-93b7-c069b540e52b" />    
+![Screenshot8](/Screenshots/Screenshot8.png)
+
+
+![Screenshot9](/Screenshots/Screenshot9.png)
+   
 
 
 The data is checked again for any string values, none are found. Here the analyst can again see that all rows are ‘non-null’. 
 
-
-<img width="633" height="427" alt="image" src="https://github.com/user-attachments/assets/4717fbef-a5ab-46b8-933d-9344f2aca260" />    
+![Screenshot10](/Screenshots/Screenshot10.png)
+ 
 
 
 Using the Seaborn library, the analyst now visualises the balancing of the outcome variable. The overall dataset is not overly unbalanced.
 
+![Screenshot11](/Screenshots/Screenshot11.png)
 
-<img width="764" height="644" alt="image" src="https://github.com/user-attachments/assets/2aacd46e-fb6d-494f-88d6-be6169bc15a2" />    
 
 
 ## Test/Train split
 The first step in the data analysis was to split the data into test and train sets and ensure that a balanced outcome variable is present in both sets, which is the case. 
 
-
-<img width="940" height="316" alt="image" src="https://github.com/user-attachments/assets/7c78ef9a-cdaa-4d50-95a3-e8d5fbb45b63" />    
+![Screenshot12](/Screenshots/Screenshot12.png)
+  
 
 
 Further EDA is then performed on the train set.
@@ -101,8 +101,8 @@ Further EDA is then performed on the train set.
 Using the Seaborn heatmap, the analyst shows the correlation that the outcome has with the features. There appears to be strong correlation with most variables - both positive and negative. 
  
 
-
-<img width="725" height="638" alt="image" src="https://github.com/user-attachments/assets/331c064f-98fc-4aad-8e34-29c4fcdb3c08" />  
+![Screenshot13](/Screenshots/Screenshot13.png)
+  
 
 # Results
 Once the EDA was completed, the analyst built the model and assessed the results.
@@ -111,14 +111,14 @@ The analyst identified balanced accuracy as the best measure for the study. This
 
 Balanced accuracy has been used over accuracy to ensure that even if an unbalanced dataset was used for any retraining of the model, it would still provide results that could be relied upon (Couto,2024).    
 
-
-<img width="870" height="339" alt="image" src="https://github.com/user-attachments/assets/62050b90-f48e-4e57-bbf6-f259aa532534" />  
+![Screenshot14](/Screenshots/Screenshot14.png)
+ 
 
 The model has a balanced accuracy of 91.37%, meaning that the model is accurately predicting the outcome variable in 91.37% of instances. 
 
 A confusion matrix was produced to see these scores more granularly.
-
-<img width="940" height="734" alt="image" src="https://github.com/user-attachments/assets/85f4225e-ded0-40f6-bb61-3695f012461d" />    
+![Screenshot15](/Screenshots/Screenshot15.png)
+  
 
 
 The analyst could see that the true positives value is just slightly higher than true negatives, both being very high. It could also be seen that predicting somebody is introverted when they are in fact extroverted, is just slightly higher than the other way around.
@@ -126,22 +126,22 @@ The analyst could see that the true positives value is just slightly higher than
 An ROC curve is also used to visualise these results.
 
 
-
-<img width="902" height="706" alt="image" src="https://github.com/user-attachments/assets/63b14029-8bc3-43c2-a85e-7027a190bb27" />    
+![Screenshot16](/Screenshots/Screenshot16.png)
+   
 
 The ROC curve shows positive results with the area under curve score being 0.91.
 
 The coefficients of each feature can be seen below.
-
-<img width="940" height="455" alt="image" src="https://github.com/user-attachments/assets/574323d7-525f-481a-9c7f-0bd4f6b28f55" />    
+![Screenshot17](/Screenshots/Screenshot17.png)
+  
 
 
 Being drained after socialising and having stage fear is a strong indicator that the outcome would result in an introverted personality type. It is only ‘time spent alone’ that has a positive importance, meaning that an increase in this value will increase the likeliness for an outcome of ‘extroverted’.
 
 ## Model comparison
 To validate the use of the logistic regression model, the LazyClassifier engine was used to compare the model to others. 
-
-<img width="772" height="580" alt="image" src="https://github.com/user-attachments/assets/ff887043-c6c6-4adf-9545-27e845197447" />    
+![Screenshot18](/Screenshots/Screenshot18.png)
+ 
 
 
 From the results of this, it can be seen that the model used in this study is amongst the most well performing.
